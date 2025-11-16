@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import DataTimer from "./components/DataTimer";
 
 export default function App() {
+    const initialDateTime = new Date().toLocaleString();
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <DataTimer currentTime={initialDateTime} />
+        <StatusBar style="auto" />
     </View>
   );
 }
