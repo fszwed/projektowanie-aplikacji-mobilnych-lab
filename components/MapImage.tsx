@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     map: {
-        width: 300,
-        height: 200,
+        width: 600,
+        height: 600,
     },
 });
 
